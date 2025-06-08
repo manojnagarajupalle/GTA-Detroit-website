@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Telangana Detroit Chapter - Events</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom CSS for Inter font and general styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        .btn-primary {
+            @apply bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition-colors duration-300 transform hover:scale-105;
+        }
+        .btn-secondary {
+            @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition-colors duration-300 transform hover:scale-105;
+        }
+        .card {
+            @apply bg-white p-6 rounded-lg shadow-lg border border-gray-100;
+        }
+        .header-nav-link {
+            @apply text-white hover:text-teal-200 px-4 py-2 rounded-md transition-colors duration-200;
+        }
+        .current-page {
+            @apply font-bold text-teal-200;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-teal-700 to-teal-900 shadow-md py-4 text-white sticky top-0 z-30">
+        <nav class="container mx-auto px-4 flex justify-between items-center flex-wrap">
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                <img src="https://placehold.co/50x50/34D399/FFFFFF?text=GTD" alt="GTD Logo" class="rounded-full">
+                <span class="text-lg sm:text-xl lg:text-2xl font-bold">Global Telangana <span class="text-teal-200">Detroit Chapter</span></span>
+            </div>
+
+            <!-- Hamburger menu for mobile -->
+            <button id="menu-button" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-teal-200 rounded-md p-2">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul id="nav-menu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 lg:space-x-6 sm:text-lg font-medium w-full md:w-auto items-center">
+                <li><a href="Index.html" class="header-nav-link">Home</a></li>
+                <li><a href="about.html" class="header-nav-link">About Us</a></li>
+                <li><a href="events.html" class="header-nav-link current-page">Events</a></li>
+                <li><a href="membership.html" class="header-nav-link">Membership</a></li>
+                <li><a href="gallery.html" class="header-nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="header-nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow py-12 md:py-16">
+        <!-- Upcoming Events Section -->
+        <section class="container mx-auto px-4 mb-16">
+            <h1 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-teal-700">Upcoming Events</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event Card -->
+                <div class="card transform hover:translate-y-[-5px] transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/400x250/F0F9FF/67E8F9?text=Bathukamma" alt="Bathukamma Sambaralu" class="rounded-t-lg mb-4 w-full h-48 object-cover">
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Bathukamma Sambaralu 2025</h3>
+                        <p class="text-md text-gray-600 mb-2"><i class="far fa-calendar-alt mr-2 text-teal-500"></i>October 26, 2025 | 4:00 PM EST</p>
+                        <p class="text-md text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2 text-teal-500"></i>Sri Venkateswara Temple Auditorium, Livonia</p>
+                        <p class="text-lg text-gray-700 mb-4">Join us for the vibrant floral festival of Bathukamma, celebrating womanhood and nature with traditional songs and dances.</p>
+                    </div>
+                    <a href="#" class="btn-primary block text-center mt-4">Register Now</a>
+                </div>
+                <!-- Add other event cards similarly -->
+            </div>
+        </section>
+
+        <!-- Past Events Section -->
+        <section class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-teal-700">Past Events Highlights</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Past Event Card -->
+                <div class="card transform hover:translate-y-[-5px] transition-transform duration-300 flex flex-col">
+                    <img src="https://placehold.co/400x250/CFFAFE/155E75?text=Past+Event+1" alt="Past Event 1" class="rounded-t-lg mb-4 w-full h-48 object-cover">
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Dasara Celebrations 2024</h3>
+                        <p class="text-md text-gray-600 mb-2"><i class="far fa-calendar-alt mr-2 text-teal-500"></i>October 2024</p>
+                        <p class="text-lg text-gray-700 mb-4">Our community came together for a grand Dasara celebration, filled with cultural performances and festive spirit.</p>
+                    </div>
+                    <a href="gallery.html" class="btn-secondary block text-center mt-4">View Photos</a>
+                </div>
+                 <!-- Add other past event cards similarly -->
+            </div>
+            <div class="text-center mt-12">
+                <a href="gallery.html" class="btn-primary text-lg">View All Past Events</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-6">
+                 <a href="Index.html" class="text-teal-400 hover:text-teal-200">Home</a>
+                <a href="about.html" class="text-teal-400 hover:text-teal-200">About Us</a>
+                <a href="events.html" class="text-teal-400 hover:text-teal-200">Events</a>
+                <a href="membership.html" class="text-teal-400 hover:text-teal-200">Membership</a>
+                <a href="gallery.html" class="text-teal-400 hover:text-teal-200">Gallery</a>
+                <a href="contact.html" class="text-teal-400 hover:text-teal-200">Contact Us</a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2025 Global Telangana Detroit Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Navigation Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const navMenu = document.getElementById('nav-menu');
+
+            // Toggle the mobile navigation menu
+            menuButton.addEventListener('click', () => {
+                const isHidden = navMenu.classList.contains('hidden');
+                if (isHidden) {
+                    navMenu.classList.remove('hidden');
+                    navMenu.classList.add('flex', 'absolute', 'top-full', 'left-0', 'right-0', 'bg-teal-800', 'shadow-lg', 'p-4', 'z-20');
+                } else {
+                    navMenu.classList.add('hidden');
+                    navMenu.classList.remove('flex', 'absolute', 'top-full', 'left-0', 'right-0', 'bg-teal-800', 'shadow-lg', 'p-4', 'z-20');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Telangana Detroit Chapter - About Us</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom CSS for Inter font and general styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        /* Style for primary buttons */
+        .btn-primary {
+            @apply bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition-colors duration-300 transform hover:scale-105;
+        }
+        /* Card styling for consistent look */
+        .card {
+            @apply bg-white p-6 rounded-lg shadow-lg border border-gray-100;
+        }
+        .header-nav-link {
+            @apply text-white hover:text-teal-200 px-4 py-2 rounded-md transition-colors duration-200;
+        }
+        .current-page {
+            @apply font-bold text-teal-200;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-teal-700 to-teal-900 shadow-md py-4 text-white sticky top-0 z-30">
+        <nav class="container mx-auto px-4 flex justify-between items-center flex-wrap">
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                <img src="https://placehold.co/50x50/34D399/FFFFFF?text=GTD" alt="GTD Logo" class="rounded-full">
+                <span class="text-lg sm:text-xl lg:text-2xl font-bold">Global Telangana <span class="text-teal-200">Detroit Chapter</span></span>
+            </div>
+
+            <!-- Hamburger menu for mobile -->
+            <button id="menu-button" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-teal-200 rounded-md p-2">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul id="nav-menu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 lg:space-x-6 sm:text-lg font-medium w-full md:w-auto items-center">
+                <li><a href="Index.html" class="header-nav-link">Home</a></li>
+                <li><a href="about.html" class="header-nav-link current-page">About Us</a></li>
+                <li><a href="events.html" class="header-nav-link">Events</a></li>
+                <li><a href="membership.html" class="header-nav-link">Membership</a></li>
+                <li><a href="gallery.html" class="header-nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="header-nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow py-12 md:py-16">
+        <!-- About Us Section -->
+        <section class="container mx-auto px-4">
+            <h1 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-teal-700">About Our Chapter</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
+                <!-- Text content for mission and vision -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Our Mission & Vision</h3>
+                    <p class="text-lg leading-relaxed mb-6">
+                        The Global Telangana Detroit Chapter's mission is to serve as a vibrant hub for the Telangana diaspora in Metro Detroit, preserving and promoting our cultural identity, empowering our community through various initiatives, and facilitating strong connections among members.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        We envision a thriving community where Telangana traditions are celebrated, new generations are engaged, and collective efforts lead to significant local impact. We strive to be a beacon of cultural pride and community support in Michigan.
+                    </p>
+                </div>
+                <!-- Image for mission and vision -->
+                <div class="rounded-lg shadow-xl overflow-hidden">
+                    <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Our+Mission" alt="Our Mission and Vision" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500">
+                </div>
+            </div>
+
+            <!-- Leadership Team Section -->
+            <div class="mb-12">
+                <h3 class="text-2xl sm:text-3xl font-bold text-center mb-8 text-teal-700">Our Leadership Team</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Leader Card 1 -->
+                    <div class="card p-6 text-center">
+                        <img src="https://placehold.co/150x150/CBD5E1/475569?text=Leader+1" alt="Leader Name 1" class="rounded-full w-36 h-36 object-cover mx-auto mb-4 shadow-md">
+                        <h4 class="text-xl font-semibold text-gray-900">John Doe</h4>
+                        <p class="text-teal-600 font-medium mb-2">President</p>
+                        <p class="text-md text-gray-700">Dedicated to fostering community growth and cultural preservation.</p>
+                    </div>
+                    <!-- Leader Card 2 -->
+                    <div class="card p-6 text-center">
+                        <img src="https://placehold.co/150x150/CBD5E1/475569?text=Leader+2" alt="Leader Name 2" class="rounded-full w-36 h-36 object-cover mx-auto mb-4 shadow-md">
+                        <h4 class="text-xl font-semibold text-gray-900">Jane Smith</h4>
+                        <p class="text-teal-600 font-medium mb-2">Vice President</p>
+                        <p class="text-md text-gray-700">Passionate about organizing impactful events for the community.</p>
+                    </div>
+                    <!-- Leader Card 3 -->
+                    <div class="card p-6 text-center">
+                        <img src="https://placehold.co/150x150/CBD5E1/475569?text=Leader+3" alt="Leader Name 3" class="rounded-full w-36 h-36 object-cover mx-auto mb-4 shadow-md">
+                        <h4 class="text-xl font-semibold text-gray-900">Ravi Kumar</h4>
+                        <p class="text-teal-600 font-medium mb-2">Secretary</p>
+                        <p class="text-md text-gray-700">Ensuring smooth operations and effective communication.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History Section -->
+            <div class="card p-8">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-4">History of the Detroit Chapter</h3>
+                <p class="text-lg leading-relaxed mb-4">
+                    The Global Telangana Detroit Chapter was established in [Year of Establishment] by a group of passionate individuals who recognized the growing need for a dedicated platform for the Telangana community in Metro Detroit. Starting with a few enthusiastic members, the chapter has grown steadily, organizing numerous successful events and becoming a cornerstone for cultural activities and community support.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Over the years, we have celebrated every major Telangana festival, hosted educational workshops, organized charity drives, and provided a strong network for new immigrants. Our journey is a testament to the strong spirit and collaborative efforts of the Telangana diaspora in Detroit.
+                </p>
+                <a href="https://www.globaltelangana.org/" target="_blank" class="block mt-6 text-teal-600 hover:underline text-lg font-medium">
+                    Visit Global Telangana Main Website <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-6">
+                 <a href="Index.html" class="text-teal-400 hover:text-teal-200">Home</a>
+                <a href="about.html" class="text-teal-400 hover:text-teal-200">About Us</a>
+                <a href="events.html" class="text-teal-400 hover:text-teal-200">Events</a>
+                <a href="membership.html" class="text-teal-400 hover:text-teal-200">Membership</a>
+                <a href="gallery.html" class="text-teal-400 hover:text-teal-200">Gallery</a>
+                <a href="contact.html" class="text-teal-400 hover:text-teal-200">Contact Us</a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2025 Global Telangana Detroit Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Navigation Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const navMenu = document.getElementById('nav-menu');
+
+            // Toggle the mobile navigation menu
+            menuButton.addEventListener('click', () => {
+                const isHidden = navMenu.classList.contains('hidden');
+                if (isHidden) {
+                    navMenu.classList.remove('hidden');
+                    navMenu.classList.add('flex', 'absolute', 'top-full', 'left-0', 'right-0', 'bg-teal-800', 'shadow-lg', 'p-4', 'z-20');
+                } else {
+                    navMenu.classList.add('hidden');
+                    navMenu.classList.remove('flex', 'absolute', 'top-full', 'left-0', 'right-0', 'bg-teal-800', 'shadow-lg', 'p-4', 'z-20');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

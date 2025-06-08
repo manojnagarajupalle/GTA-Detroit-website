@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Telangana Detroit Chapter - Gallery</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom CSS for Inter font and general styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        .header-nav-link {
+            @apply text-white hover:text-teal-200 px-4 py-2 rounded-md transition-colors duration-200;
+        }
+        .current-page {
+            @apply font-bold text-teal-200;
+        }
+        .gallery-item .overlay {
+            @apply absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center;
+        }
+         .gallery-item .overlay-text {
+            @apply text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 text-lg font-semibold;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-teal-700 to-teal-900 shadow-md py-4 text-white sticky top-0 z-30">
+        <nav class="container mx-auto px-4 flex justify-between items-center flex-wrap">
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                <img src="https://placehold.co/50x50/34D399/FFFFFF?text=GTD" alt="GTD Logo" class="rounded-full">
+                <span class="text-lg sm:text-xl lg:text-2xl font-bold">Global Telangana <span class="text-teal-200">Detroit Chapter</span></span>
+            </div>
+
+            <!-- Hamburger menu for mobile -->
+            <button id="menu-button" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-teal-200 rounded-md p-2">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul id="nav-menu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 lg:space-x-6 sm:text-lg font-medium w-full md:w-auto items-center">
+                <li><a href="Index.html" class="header-nav-link">Home</a></li>
+                <li><a href="about.html" class="header-nav-link">About Us</a></li>
+                <li><a href="events.html" class="header-nav-link">Events</a></li>
+                <li><a href="membership.html" class="header-nav-link">Membership</a></li>
+                <li><a href="gallery.html" class="header-nav-link current-page">Gallery</a></li>
+                <li><a href="contact.html" class="header-nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow py-12 md:py-16">
+        <!-- Gallery Section -->
+        <section class="container mx-auto px-4">
+            <h1 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-teal-700">Our Photo & Video Gallery</h1>
+            
+            <div class="mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 text-teal-600">Recent Events</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <a href="#" class="gallery-item group block rounded-lg shadow-md overflow-hidden relative">
+                        <img src="https://placehold.co/400x300/A7F3D0/065F46?text=Dasara+2024" alt="Dasara Celebrations 2024" class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        <div class="overlay">
+                            <span class="overlay-text">View Album</span>
+                        </div>
+                        <div class="p-4 bg-white">
+                            <p class="text-md font-semibold text-gray-800 truncate">Dasara Celebrations 2024</p>
+                            <p class="text-sm text-gray-600">October 2024</p>
+                        </div>
+                    </a>
+                    <!-- Add more gallery items similarly -->
+                </div>
+            </div>
+
+            <!-- Video Gallery Section -->
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 text-teal-600">Video Highlights</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Video Embed 1 -->
+                    <div class="rounded-lg shadow-md overflow-hidden bg-white">
+                        <div class="relative w-full" style="padding-top: 56.25%;">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-md font-semibold text-gray-800">Dasara Celebrations 2024 - Highlights</p>
+                        </div>
+                    </div>
+                    <!-- Video Embed 2 -->
+                    <div class="rounded-lg shadow-md overflow-hidden bg-white">
+                        <div class="relative w-full" style="padding-top: 56.25%;">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-md font-semibold text-gray-800">Youth Connect Workshop - Recap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-6">
+                 <a href="Index.html" class="text-teal-400 hover:text-teal-200">Home</a>
+                <a href="about.html" class="text-teal-400 hover:text-teal-200">About Us</a>
+                <a href="events.html" class="text-teal-400 hover:text-teal-200">Events</a>
+                <a href="membership.html" class="text-teal-400 hover:text-teal-200">Membership</a>
+                <a href="gallery.html" class="text-teal-400 hover:text-teal-200">Gallery</a>
+                <a href="contact.html" class="text-teal-400 hover:text-teal-200">Contact Us</a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2025 Global Telangana Detroit Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Navigation Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const navMenu = document.getElementById('nav-menu');
+
+            menuButton.addEventListener('click', () => {
+                const isHidden = navMenu.classList.contains('hidden');
+                if (isHidden) {
+                    navMenu.classList.remove('hidden');
+                    navMenu.classList.add('flex', 'absolute', 'top-full', 'left-0', 'right-0', 'bg-teal-800', 'shadow-lg', 'p-4', 'z-20');
+                } else {
+                    navMenu.classList.add('hidden');
+                    navMenu.classList.remove('flex', 'absolute', 'top-full', 'left-0', 'right-0', 'bg-teal-800', 'shadow-lg', 'p-4', 'z-20');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

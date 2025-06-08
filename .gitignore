@@ -1,0 +1,20 @@
+# System Files
+*.DS_Store
+Thumbs.db
+.vscode/
+
+# Temporary Files
+*.log
+*.tmp
+*.swp
+
+# Dependencies and Build Artifacts
+node_modules/
+dist/
+build/
+
+# Environment Variables
+.env
+
+# Specific Files
+secrets.txt

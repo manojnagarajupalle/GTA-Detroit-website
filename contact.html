@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Telangana Detroit Chapter - Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom CSS for Inter font and general styling */
+        /* Explicitly set html and body to white with no margin/padding for full coverage */
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            @apply bg-white text-gray-800; 
+        }
+        /* Specific styling for navigation links to match a sophisticated look */
+        .nav-link {
+            @apply px-4 py-2 rounded-md transition-colors duration-200 hover:bg-teal-700 hover:text-white;
+        }
+        /* Style for primary buttons, adjusted for a slightly darker teal */
+        .btn-primary {
+            @apply bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition-colors duration-300 transform hover:scale-105;
+        }
+        /* Style for secondary buttons */
+        .btn-secondary {
+            @apply bg-white text-teal-700 px-6 py-3 rounded-lg shadow-md hover:bg-gray-100 transition-colors duration-300 transform hover:scale-105;
+        }
+        /* Card styling for consistent look */
+        .card {
+            @apply bg-white p-6 rounded-lg shadow-lg border border-gray-100;
+        }
+        /* Header background to match main site more closely */
+        .header-bg {
+            background-color: #007bff; /* A blue that often complements teal/green, or adjust to a deeper teal if preferred */
+            @apply text-white;
+        }
+        .header-nav-link {
+            @apply text-white hover:text-teal-200 px-4 py-2 rounded-md transition-colors duration-200;
+        }
+        .hero-section {
+             background: linear-gradient(to right, #0d9488, #0f766e); /* Darker teal gradient for hero */
+             @apply py-20 md:py-24 text-white text-center relative overflow-hidden;
+        }
+        .current-page {
+            @apply font-bold text-teal-200;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-teal-700 to-teal-900 shadow-md py-4 text-white sticky top-0 z-30">
+        <nav class="container mx-auto px-4 flex justify-between items-center flex-wrap">
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-2 mb-4 sm:mb-0">
+                <img src="https://placehold.co/50x50/34D399/FFFFFF?text=GTD" alt="GTD Logo" class="rounded-full">
+                <span class="text-lg sm:text-xl lg:text-2xl font-bold">Global Telangana <span class="text-teal-200">Detroit Chapter</span></span>
+            </div>
+
+            <!-- Hamburger menu for mobile -->
+            <button id="menu-button" class="md:hidden text-white focus:outline-none focus:ring-2 focus:ring-teal-200 rounded-md p-2">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul id="nav-menu" class="hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 lg:space-x-6 sm:text-lg font-medium w-full md:w-auto items-center">
+                <li><a href="Index.html" class="header-nav-link current-page">Home</a></li>
+                <li><a href="about.html" class="header-nav-link">About Us</a></li>
+                <li><a href="events.html" class="header-nav-link">Events</a></li>
+                <li><a href="membership.html" class="header-nav-link">Membership</a></li>
+                <li><a href="gallery.html" class="header-nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="header-nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow bg-white">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="absolute inset-0 bg-black opacity-40"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                    Welcome to Global Telangana Detroit Chapter
+                </h1>
+                <p class="text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
+                    Fostering Culture, Community, and Connections in Metro Detroit.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="events.html" class="btn-primary">Explore Upcoming Events</a>
+                    <a href="membership.html" class="btn-secondary">Become a Member</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brief About Us Section on Home Page -->
+        <section class="py-12 md:py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-teal-700">Who We Are</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="card p-8">
+                        <p class="text-lg leading-relaxed mb-6">
+                            The Global Telangana Detroit Chapter is dedicated to preserving and promoting the rich cultural heritage of Telangana within the Metro Detroit area. We are a proud extension of Global Telangana, uniting Telanganites and fostering strong community bonds.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Our mission is to serve as a central hub, organizing cultural events, educational programs, and community service activities. We celebrate our traditions, empower our members, and build lasting friendships, ensuring the spirit of Telangana thrives here in Detroit.
+                        </p>
+                        <a href="about.html" class="block mt-6 text-teal-600 hover:underline text-lg font-medium">
+                            Read More About Us <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="rounded-lg shadow-xl overflow-hidden">
+                        <img src="https://placehold.co/600x400/D1FAE5/10B981?text=Detroit+Community" alt="Detroit Chapter Community" class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Events Section on Home Page -->
+        <section class="py-12 md:py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-teal-700">Featured Events</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event Card 1 -->
+                    <div class="card transform hover:translate-y-[-5px] transition-transform duration-300 flex flex-col">
+                        <img src="https://placehold.co/400x250/F0F9FF/67E8F9?text=Bathukamma" alt="Bathukamma Sambaralu" class="rounded-t-lg mb-4 w-full h-48 object-cover">
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Bathukamma Sambaralu 2025</h3>
+                            <p class="text-md text-gray-600 mb-2"><i class="far fa-calendar-alt mr-2 text-teal-500"></i>October 26, 2025 | 4:00 PM EST</p>
+                            <p class="text-md text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2 text-teal-500"></i>Sri Venkateswara Temple Auditorium</p>
+                            <p class="text-lg text-gray-700 mb-4">Join us for the vibrant floral festival, celebrating womanhood and nature with traditional songs.</p>
+                        </div>
+                        <a href="events.html" class="btn-primary block text-center mt-4">Learn More</a>
+                    </div>
+                    <!-- Event Card 2 -->
+                    <div class="card transform hover:translate-y-[-5px] transition-transform duration-300 flex flex-col">
+                        <img src="https://placehold.co/400x250/F0F9FF/67E8F9?text=Diwali" alt="Diwali Celebrations" class="rounded-t-lg mb-4 w-full h-48 object-cover">
+                         <div class="flex-grow">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Diwali Celebrations 2025</h3>
+                            <p class="text-md text-gray-600 mb-2"><i class="far fa-calendar-alt mr-2 text-teal-500"></i>November 15, 2025 | 6:00 PM EST</p>
+                            <p class="text-md text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2 text-teal-500"></i>Sterling Heights Community Center</p>
+                            <p class="text-lg text-gray-700 mb-4">A grand celebration of lights and joy! Enjoy cultural performances and delicious food.</p>
+                        </div>
+                        <a href="events.html" class="btn-primary block text-center mt-4">Learn More</a>
+                    </div>
+                    <!-- Event Card 3 -->
+                    <div class="card transform hover:translate-y-[-5px] transition-transform duration-300 flex flex-col">
+                        <img src="https://placehold.co/400x250/F0F9FF/67E8F9?text=Community+Service" alt="Community Service Drive" class="rounded-t-lg mb-4 w-full h-48 object-cover">
+                        <div class="flex-grow">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-2">Winter Coat Drive</h3>
+                            <p class="text-md text-gray-600 mb-2"><i class="far fa-calendar-alt mr-2 text-teal-500"></i>December 7, 2025 | 10:00 AM EST</p>
+                            <p class="text-md text-gray-600 mb-4"><i class="fas fa-map-marker-alt mr-2 text-teal-500"></i>Various locations in Detroit</p>
+                            <p class="text-lg text-gray-700 mb-4">Join our community service initiative to collect and distribute warm coats for those in need.</p>
+                        </div>
+                        <a href="events.html" class="btn-primary block text-center mt-4">Learn More</a>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="events.html" class="btn-primary text-lg">View All Events</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-6">
+                <a href="Index.html" class="text-teal-400 hover:text-teal-200">Home</a>
+                <a href="about.html" class="text-teal-400 hover:text-teal-200">About Us</a>
+                <a href="events.html" class="text-teal-400 hover:text-teal-200">Events</a>
+                <a href="membership.html" class="text-teal-400 hover:text-teal-200">Membership</a>
+                <a href="gallery.html" class="text-teal-400 hover:text-teal-200">Gallery</a>
+                <a href="contact.html" class="text-teal-400 hover:text-teal-200">Contact Us</a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2025 Global Telangana Detroit Chapter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Navigation Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const navMenu = document.getElementById('nav-menu');
+
+            // Toggle the mobile navigation menu
+            menuButton.addEventListener('click', () => {
+                const isHidden = navMenu.classList.contains('hidden');
+                if (isHidden) {
+                    navMenu.classList.remove('hidden');
+                    navMenu.classList.add('flex', 'absolute', 'top-full', 'left-0', 'right-0', 'bg-teal-800', 'shadow-lg', 'p-4', 'z-20');
+                } else {
+                    navMenu.classList.add('hidden');
+                    navMenu.classList.remove('flex', 'absolute', 'top-full', 'left-0', 'right-0', 'bg-teal-800', 'shadow-lg', 'p-4', 'z-20');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
